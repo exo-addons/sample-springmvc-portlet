@@ -1,0 +1,12 @@
+.contacts-header {
+    clear: both;
+}
+
+.contacts-header h3 {
+    float: left;
+}
+
+.new-contact-btn {
+    float: right;
+    margin: 10px 0;
+}

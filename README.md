@@ -1,4 +1,4 @@
-sample-springmvc-portlet
-========================
+Spring MVC Portlet
+==================
 
-A Speing MVC Portlet sample packaged like an add-on
+Sample Spring MVC Portlet
