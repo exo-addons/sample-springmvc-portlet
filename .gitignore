@@ -1,0 +1,31 @@
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+
+# Maven
+target/
+
+# eclipse project file
+.settings/
+.classpath
+.project
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# JRebel
+rebel.xml
+rebel-remote.xml
