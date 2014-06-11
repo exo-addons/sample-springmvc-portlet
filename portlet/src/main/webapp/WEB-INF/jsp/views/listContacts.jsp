@@ -12,14 +12,14 @@
     <portlet:param name="action" value="displayContactForm"/>
 </portlet:renderURL>
 
-<link rel="stylesheet" href="/springmvc-portlet/style/contacts.css"/>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/style/contacts.css"/>
 
 <div class="contacts-header">
     <h3>Contacts</h3>
     <a href="${displayNewContactForm}" class="btn btn-primary new-contact-btn">New Contact</a>
 </div>
 
-<table class="table table-bordered">
+<table id="contactsList" class="table table-bordered">
     <tr>
         <th>Firstname</th>
         <th>Lastname</th>

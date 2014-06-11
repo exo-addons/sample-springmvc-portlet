@@ -11,7 +11,7 @@
 <portlet:renderURL var="listContactsURL">
 </portlet:renderURL>
 
-<portlet:actionURL var="actionCreateContactURL">
+<portlet:actionURL var="actionCreateContactURL" escapeXml="false">
 </portlet:actionURL>
 
 <div id="msg">
@@ -22,7 +22,7 @@
     <h3>Update Contact</h3>
   </c:if>
 
-  <form:form modelAttribute="contact" action="${actionCreateContactURL}" method="POST" class="form-horizontal">
+  <form:form id="contactForm" modelAttribute="contact" action="${actionCreateContactURL}" method="POST" class="form-horizontal">
 
     <form:hidden path="id"></form:hidden>
     <div class="control-group">
@@ -57,10 +57,10 @@
     <div class="control-group">
         <div class="controls">
             <c:if test="${contact.id == null}">
-                <input class="btn btn-primary" type="submit" value="Create"/>
+                <input id="validateNewContactButton" class="btn btn-primary" type="submit" value="Create"/>
             </c:if>
             <c:if test="${contact.id != null}">
-                <input class="btn btn-primary" type="submit" value="Update"/>
+                <input id="validateUpdateContactButton" class="btn btn-primary" type="submit" value="Update"/>
             </c:if>
             <a href="${listContactsURL}" class="btn">Cancel</a>
         </div>
