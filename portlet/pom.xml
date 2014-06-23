@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>sample-springmvc-portlet-parent</artifactId>
@@ -11,12 +11,10 @@
   <packaging>war</packaging>
   <name>Sample Spring MVC Portlet</name>
   <description>Sample Spring MVC Portlet</description>
-
   <properties>
     <exoplatform.version>4.0.5</exoplatform.version>
     <spring.version>4.0.4.RELEASE</spring.version>
   </properties>
-
   <dependencyManagement>
     <dependencies>
       <!-- Import versions from platform project -->
@@ -31,8 +29,8 @@
         <groupId>org.jboss.arquillian</groupId>
         <artifactId>arquillian-bom</artifactId>
         <version>1.1.4.Final</version>
-        <scope>import</scope>
         <type>pom</type>
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.jboss.arquillian.extension</groupId>
@@ -43,19 +41,18 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-  	<dependency>
+    <dependency>
       <groupId>javax.portlet</groupId>
       <artifactId>portlet-api</artifactId>
       <scope>provided</scope>
     </dependency>
-  	<dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc-portlet</artifactId>
       <version>${spring.version}</version>
@@ -116,7 +113,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>org.jboss.arquillian.extension</groupId>
+      <groupId>org.jboss.arquillian.extension</groupId>
       <artifactId>arquillian-portal-impl-gatein</artifactId>
       <version>1.1.0.Alpha1</version>
       <scope>test</scope>
@@ -191,7 +188,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
   <build>
     <finalName>sample-springmvc-portlet</finalName>
     <plugins>
@@ -205,5 +201,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
