@@ -29,7 +29,6 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>sample-springmvc-portlet</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>Sample Spring MVC Portlet</name>
   <description>Sample Spring MVC Portlet</description>
