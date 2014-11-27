@@ -58,6 +58,7 @@ public class ContactsPortletTest {
                             .asFile())
             .addClasses(Contact.class, ContactController.class, ContactService.class, ContactServiceImpl.class)
             .addAsWebInfResource(new File("src/main/webapp/WEB-INF/web.xml"), "web.xml")
+            .addAsWebInfResource(new File("src/main/webapp/WEB-INF/tld/portlet_2_0.tld"), "tld/portlet_2_0.tld")
             .addAsWebInfResource(new File("src/main/webapp/WEB-INF/sample-springmvc-portlet.xml"), "sample-springmvc-portlet.xml")
             .addAsWebInfResource(new File("src/main/webapp/WEB-INF/portlet.xml"), "portlet.xml")
             .addAsWebInfResource(new File("src/main/webapp/WEB-INF/jsp/views/contactForm.jsp"), "jsp/views/contactForm.jsp")
