@@ -31,7 +31,7 @@
     <!-- war -->
     <dependencySet>
       <useProjectArtifact>false</useProjectArtifact>
-      <outputDirectory>/webapps</outputDirectory>
+      <outputDirectory>/sample-springmvc-portlet</outputDirectory>
       <includes>
         <include>${project.groupId}:sample-springmvc-portlet:war</include>
       </includes>
