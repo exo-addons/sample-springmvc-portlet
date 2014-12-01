@@ -18,7 +18,7 @@
     You should have received a copy of the GNU Lesser General Public
     License along with Sample Spring MVC Portlet Parent; if not, write to the Free
     Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
-    02110-1301 USA, or see <http://www.gnu.org/licenses/>.
+    02110-1301 USA, or see <http://www.gnu.org/licenses />.
 
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -30,7 +30,7 @@
   </parent>
   <groupId>org.exoplatform.addons.portlets</groupId>
   <artifactId>sample-springmvc-portlet-parent</artifactId>
-  <version>1.0.x-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>pom</packaging>
   <name>Sample Spring MVC Portlet Parent</name>
   <description>Sample Spring MVC Portlet Parent</description>
@@ -38,7 +38,7 @@
     <connection>scm:git:git://github.com/exo-addons/sample-springmvc-portlet.git</connection>
     <developerConnection>scm:git:git@github.com:exo-addons/sample-springmvc-portlet.git</developerConnection>
     <url>https://github.com/exo-addons/sample-springmvc-portlet</url>
-    <tag>HEAD</tag>
+    <tag>sample-springmvc-portlet-parent-1.0.0</tag>
   </scm>  
   <modules>
     <module>portlet</module>
