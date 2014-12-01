@@ -30,12 +30,46 @@
   </parent>
   <groupId>org.exoplatform.addons.portlets</groupId>
   <artifactId>sample-springmvc-portlet-parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.1.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Sample Spring MVC Portlet Parent</name>
   <description>Sample Spring MVC Portlet Parent</description>
+  <scm>
+    <connection>scm:git:git://github.com/exo-addons/sample-springmvc-portlet.git</connection>
+    <developerConnection>scm:git:git@github.com:exo-addons/sample-springmvc-portlet.git</developerConnection>
+    <url>https://github.com/exo-addons/sample-springmvc-portlet</url>
+    <tag>HEAD</tag>
+  </scm>  
   <modules>
     <module>portlet</module>
     <module>packaging</module>
   </modules>
+  <profiles>
+    <profile>
+      <id>project-repositories</id>
+      <activation>
+        <property>
+          <name>!skip-project-repositories</name>
+        </property>
+      </activation>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <id>repository.exoplatform.org</id>
+          <url>https://repository.exoplatform.org/public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <id>repository.exoplatform.org</id>
+          <url>https://repository.exoplatform.org/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
 </project>
